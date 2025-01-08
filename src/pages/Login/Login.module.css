@@ -1,0 +1,88 @@
+.LoginPage {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
+}
+.PageTitle {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 3.3vw;
+  width: 290px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 50px 0px 20px 0px;
+  cursor: default;
+}
+.ContainerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6e6e6;
+  width: 30vw;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 12px black;
+}
+.UserInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.EmailArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Protest Strike", sans-serif;
+  font-size: clamp(17px, 1.24vw, 1.24vw);
+}
+.EmailArea input {
+  height: 40px;
+  width: 350px;
+  background-color: #6b717e;
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.EmailArea input::placeholder {
+  color: white;
+}
+.PasswordArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Protest Strike", sans-serif;
+  font-size: clamp(17px, 1.24vw, 1.24vw);
+}
+.PasswordArea input {
+  width: 350px;
+  height: 40px;
+  background-color: #6b717e;
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+.PasswordArea input::placeholder {
+  color: white;
+}
+.ConfirmButton {
+  width: 120px;
+  height: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(12px, 1.2vw, 1.2vw);
+  margin-top: 15px;
+  background-color: #f71717;
+  color: white;
+  border-radius: 3px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.ConfirmButton:hover {
+  transform: scale(1.09);
+}
