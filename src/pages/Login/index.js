@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Login.module.css";
 
 function Login() {
@@ -15,7 +16,16 @@ function Login() {
             <input type="email" placeholder="Insira sua senha" />
           </label>
         </div>
-        <button className={styles.ConfirmButton}>Entrar</button>
+        <nav className={styles.UserNavigation}>
+          <Link>
+            {" "}
+            <button className={styles.ConfirmButton}>Entrar</button>{" "}
+          </Link>
+          <Link to="/register">
+            <button className={styles.ConfirmButton}> Criar Conta </button>
+          </Link>
+        </nav>
+        <Link className={styles.PasswordForgout}>Esqueci a senha</Link>
       </section>
     </main>
   );
