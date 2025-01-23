@@ -1,179 +1,469 @@
-.RegisterPage {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
-}
-.PageTitle {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: normal;
-  font-size: clamp(2.3rem, 3.3vw, 3.3vw);
-  width: 290px;
-  text-align: center;
-  border-bottom: 2px solid black;
-  margin: 50px 0px 20px 0px;
-  cursor: default;
-}
-.ContainerForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #e6e6e6;
-  width: 30vw;
-  min-width: 300px;
-  height: 600px;
-  border-radius: 15px;
-  padding-bottom: 10px;
-  box-shadow: inset 0px 0px 12px black;
-}
-.UserInfo {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.EmailArea {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Protest Strike", sans-serif;
-  font-size: clamp(17px, 1.24vw, 1.24vw);
-}
-.EmailArea input {
-  height: 40px;
-  width: 24vw;
-  min-width: 200px;
-  background-color: #6b717e;
-  color: white;
-  border: 1px solid rgb(0, 0, 0);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
-.EmailArea input::placeholder {
-  color: white;
-}
-.PasswordArea {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Protest Strike", sans-serif;
-  font-size: clamp(17px, 1.24vw, 1.24vw);
-}
-.PasswordArea input {
-  width: 24vw;
-  min-width: 200px;
-  height: 40px;
-  background-color: #6b717e;
-  color: white;
-  border: 1px solid rgb(0, 0, 0);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
-.PasswordArea input::placeholder {
-  color: white;
-}
-.InputAge {
-  width: 80px;
-  height: 30px;
-  background-color: #6b717e;
-  color: white;
-  border: 1px solid rgb(0, 0, 0);
-  font-size: 1.7vw;
-  border-radius: 10px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  text-align: center;
-}
-.ConfirmButton {
-  width: 140px;
-  height: 40px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(12px, 1.2vw, 1.2vw);
-  margin-top: 15px;
-  background-color: #f71717;
-  color: white;
-  border-radius: 3px;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-.ConfirmButton:hover {
-  transform: scale(1.09);
-}
-.PasswordForgout {
-  text-decoration: none;
-
-  font-family: "Poppins";
-  width: 0px;
-  margin: 10px 133px 0px 0px;
-  white-space: nowrap;
-  color: black;
-  transition: all 0.7s ease;
-  border-bottom: 1px solid black;
-}
-
-.PasswordForgout:hover {
-  animation: show 0.8s ease forwards;
-  width: 132px;
-  margin: 10px 0px 0px 0px;
-}
-
-.UserData {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.GenderArea {
-  display: flex;
-  height: 40px;
-  width: 25vw;
-  min-width: 200px;
-  padding: 0px 10px;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
-  border-radius: 5px;
-}
-.GenderArea input {
-  cursor: pointer;
-  width: 20px;
-  height: 15px;
-}
-.GenderArea label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-p {
-  color: black;
-  font-size: clamp(12px, 1.4vw, 1.4vw);
-  font-family: "Protest Strike";
-  margin-bottom: 5px;
-  cursor: default;
-}
-span {
-  color: rgba(0, 0, 0, 0.568);
-  font-size: 1rem;
-  margin-bottom: 7px;
-  cursor: default;
-}
-.UserNavigation {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-}
-@media screen and (width < 1400px) {
-  .GenderArea {
+@media screen and (width < 800px) {
+  .RegisterPage {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
-    height: 110px;
-    width: 20vw;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
+  }
+  .PageTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: clamp(2.3rem, 3.3vw, 3.3vw);
+    width: 290px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    margin: 10px 0px 10px 0px;
+    cursor: default;
+  }
+  .ContainerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e6e6;
+    width: 30vw;
+    padding-top: 8px;
+    min-width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    box-shadow: inset 0px 0px 12px black;
+  }
+  .UserInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .EmailArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(16px, 1.14vw, 1.24vw);
+  }
+  .EmailArea input {
+    height: 40px;
+    width: clamp(250px, 33vw, 33vw);
+
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .EmailArea input::placeholder {
+    color: white;
+  }
+  .PasswordArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(16px, 1.14vw, 1.24vw);
+  }
+  .PasswordArea input {
+    width: clamp(250px, 33vw, 33vw);
+
+    height: 40px;
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .PasswordArea input::placeholder {
+    color: white;
+  }
+  .PasswordConfirmationArea input {
+    width: clamp(250px, 33vw, 33vw);
+    height: 40px;
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .PasswordConfirmationArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(16px, 1.14vw, 1.24vw);
+  }
+  .PasswordConfirmationArea input::placeholder {
+    color: white;
+  }
+  .AgeArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  .InputAge {
+    width: 80px;
+    height: 30px;
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: clamp(12px, 1.7vw, 1.7vw);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
   }
   .ConfirmButton {
-    width: 100px;
+    width: 140px;
+    height: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(16px, 1.2vw, 1.2vw);
+    margin-top: 15px;
+    background-color: #f71717;
+    color: white;
+    border-radius: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
   }
+  .ConfirmButton:hover {
+    transform: scale(1.09);
+  }
+  .PasswordForgout {
+    text-decoration: none;
+
+    font-family: "Poppins";
+    width: 0px;
+    margin: 10px 133px 0px 0px;
+    white-space: nowrap;
+    color: black;
+    transition: all 0.7s ease;
+    border-bottom: 1px solid black;
+  }
+
+  .PasswordForgout:hover {
+    animation: show 0.8s ease forwards;
+    width: 132px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .UserData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .GenderArea {
+    display: flex;
+    height: 40px !important;
+    width: 93% !important;
+
+    min-width: 200px;
+    padding: 0px 10px;
+    align-items: center;
+    flex-direction: row !important;
+    border-radius: 5px;
+    gap: 5px;
+    justify-content: space-between !important;
+  }
+
+  .GenderArea button {
+    display: flex;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    box-shadow: 1px 1px 10px #00000060;
+    border-radius: 8px;
+    color: white;
+    background-color: #6b717e;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(12px, 1.3vw, 1.3vw);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .GenderArea button:active {
+    background-color: #2d4781;
+    box-shadow: inset 0px 0px 10px black;
+    transform: scale(0.9);
+  }
+
+  p {
+    color: black;
+    font-size: clamp(16px, 1.14vw, 1.24vw);
+    font-family: "Protest Strike";
+    margin-bottom: 5px;
+    cursor: default;
+  }
+  span {
+    color: rgba(0, 0, 0, 0.568);
+    font-size: 1rem;
+    margin-bottom: 7px;
+    cursor: default;
+  }
+  .UserNavigation {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media screen and (width < 1400px) {
+    .GenderArea {
+      flex-direction: column;
+      height: 110px;
+      width: 20vw;
+      justify-content: space-around;
+    }
+    .ConfirmButton {
+      width: 100px;
+    }
+  }
+}
+@media screen and (width > 800px) {
+  .RegisterPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
+  }
+  .PageTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: clamp(2.3rem, 3.3vw, 3.3vw);
+    width: 290px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: 10px 0px 20px 0px;
+    cursor: default;
+  }
+  .ContainerForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    background-color: #e6e6e6;
+    width: 90vw;
+    min-width: 300px;
+    height: 600px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    box-shadow: inset 0px 0px 12px black;
+  }
+  .UserInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 300px;
+    margin-left: 40px;
+  }
+  .EmailArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(17px, 1.24vw, 1.24vw);
+  }
+  .EmailArea input {
+    height: 40px;
+    width: 30vw;
+    min-width: 200px;
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .EmailArea input::placeholder {
+    color: white;
+  }
+  .PasswordArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(17px, 1.24vw, 1.24vw);
+  }
+  .PasswordArea input {
+    width: 30vw;
+    min-width: 200px;
+    height: 40px;
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .PasswordArea input::placeholder {
+    color: white;
+  }
+  .PasswordConfirmationArea input {
+    width: 30vw;
+    min-width: 200px;
+    height: 40px;
+    background-color: #6b717e;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .PasswordConfirmationArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(17px, 1.24vw, 1.24vw);
+  }
+  .PasswordConfirmationArea input::placeholder {
+    color: white;
+  }
+
+  .ConfirmButton {
+    width: 140px;
+    height: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(16px, 1.2vw, 1.2vw);
+    margin-top: 15px;
+    background-color: #f71717;
+    color: white;
+    border-radius: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .ConfirmButton:hover {
+    transform: scale(1.09);
+  }
+  .PasswordForgout {
+    text-decoration: none;
+
+    font-family: "Poppins";
+    width: 0px;
+    margin: 10px 133px 0px 0px;
+    white-space: nowrap;
+    color: black;
+    transition: all 0.7s ease;
+    border-bottom: 1px solid black;
+  }
+
+  .PasswordForgout:hover {
+    animation: show 0.8s ease forwards;
+    width: 132px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .UserData {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 400px;
+    align-items: center;
+  }
+  .GenderArea {
+    display: flex;
+    height: 180px !important;
+    width: 35vw !important;
+    min-width: 200px;
+    padding: 0px 10px;
+    align-items: center;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    border-radius: 5px;
+  }
+
+  .GenderArea button {
+    display: flex;
+    width: 20vw;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    box-shadow: 1px 1px 10px #00000060;
+    border-radius: 8px;
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(12px, 1.3vw, 1.3vw);
+    font-weight: 500;
+    text-align: center;
+  }
+  .GenderArea button:hover {
+    transform: scale(1.08);
+  }
+  .GenderArea button:active {
+    background-color: #2d4781;
+    box-shadow: inset 0px 0px 10px black;
+  }
+  .AgeArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .InputAge {
+    width: 80px;
+    height: 30px;
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.7vw;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  p {
+    color: black;
+    font-size: clamp(15px, 1.6vw, 1.6vw);
+    font-family: "Protest Strike";
+    margin-bottom: 5px;
+    cursor: default;
+  }
+  span {
+    color: rgba(0, 0, 0, 0.568);
+    font-size: 1rem;
+    margin-bottom: 7px;
+    cursor: default;
+  }
+  .UserNavigation {
+    display: flex;
+    width: 240px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media screen and (width < 1400px) {
+    .GenderArea {
+      flex-direction: column;
+      height: 110px;
+      width: 20vw;
+      justify-content: space-around;
+    }
+    .ConfirmButton {
+      width: 100px;
+    }
+  }
+}
+.MessageError {
+  font-size: clamp(14px, 1.3vw, 1.3rem);
+  margin-top: 4px;
+  color: red;
+
+  white-space: nowrap;
 }

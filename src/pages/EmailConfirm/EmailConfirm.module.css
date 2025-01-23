@@ -1,0 +1,56 @@
+.EmailConfirmPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    #000000 20%,
+    #01010d 40%,
+    #000000 90%
+  );
+  width: 100vw;
+  height: 100vh;
+}
+.Title {
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: clamp(15px, 4vw, 4vw);
+}
+.p1 {
+  color: white;
+  margin: 0px;
+}
+.p2 {
+  color: white;
+  width: 80%;
+  text-align: center;
+  border-top: 2px solid white;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: clamp(15px, 2vw, 2vw);
+}
+
+.CodeVerification {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00000064;
+  height: 400px;
+  width: 40vw;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+.CodeVerification input {
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  font-size: clamp(13px, 4vw, 4vw);
+  text-align: center;
+  background-color: #000000;
+  border: 1px solid white;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
