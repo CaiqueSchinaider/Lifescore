@@ -11,7 +11,7 @@
   .PageTitle {
     font-family: "Bebas Neue", sans-serif;
     font-weight: normal;
-    font-size: clamp(2.3rem, 3.3vw, 3.3vw);
+    font-size: clamp(1.4rem, 3.1vw, 3.1vw);
     width: 290px;
     text-align: center;
     color: #ffffff;
@@ -27,7 +27,7 @@
     width: 30vw;
     padding-top: 8px;
     min-width: 300px;
-    height: 600px;
+    height: auto !important;
     border-radius: 15px;
     padding-bottom: 10px;
     box-shadow: inset 0px 0px 12px black;
@@ -35,7 +35,7 @@
   .UserInfo {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 2px;
   }
   .EmailArea {
     display: flex;
@@ -45,7 +45,7 @@
     font-size: clamp(16px, 1.14vw, 1.24vw);
   }
   .EmailArea input {
-    height: 40px;
+    height: 30px;
     width: clamp(250px, 33vw, 33vw);
 
     background-color: #6b717e;
@@ -67,8 +67,7 @@
   }
   .PasswordArea input {
     width: clamp(250px, 33vw, 33vw);
-
-    height: 40px;
+    height: 30px;
     background-color: #6b717e;
     color: white;
     border: 1px solid rgb(0, 0, 0);
@@ -81,7 +80,7 @@
   }
   .PasswordConfirmationArea input {
     width: clamp(250px, 33vw, 33vw);
-    height: 40px;
+    height: 30px;
     background-color: #6b717e;
     color: white;
     border: 1px solid rgb(0, 0, 0);
@@ -99,40 +98,7 @@
   .PasswordConfirmationArea input::placeholder {
     color: white;
   }
-  .AgeArea {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-  }
-  .InputAge {
-    width: 80px;
-    height: 30px;
-    background-color: #6b717e;
-    color: white;
-    border: 1px solid rgb(0, 0, 0);
-    font-size: clamp(12px, 1.7vw, 1.7vw);
-    border-radius: 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    text-align: center;
-  }
-  .ConfirmButton {
-    width: 140px;
-    height: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(16px, 1.2vw, 1.2vw);
-    margin-top: 15px;
-    background-color: #f71717;
-    color: white;
-    border-radius: 3px;
-    transition: 0.2s ease;
-    cursor: pointer;
-  }
-  .ConfirmButton:hover {
-    transform: scale(1.09);
-  }
+
   .PasswordForgout {
     text-decoration: none;
 
@@ -155,6 +121,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .UserData p {
+    margin-top: 2px;
   }
   .GenderArea {
     display: flex;
@@ -191,7 +160,29 @@
     box-shadow: inset 0px 0px 10px black;
     transform: scale(0.9);
   }
-
+  .AgeArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+  .AgeArea p {
+    margin-top: 0px;
+    margin-bottom: 4px;
+  }
+  .InputAge {
+    width: 80px;
+    height: 30px;
+    background-color: #6b717e;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: clamp(12px, 1.7vw, 1.7vw);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
   p {
     color: black;
     font-size: clamp(16px, 1.14vw, 1.24vw);
@@ -207,10 +198,29 @@
   }
   .UserNavigation {
     display: flex;
+    padding-top: 0px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     flex-direction: row;
+
+    align-items: center;
     justify-content: space-around;
+  }
+  .ConfirmButton0,
+  .ConfirmButton1 {
+    width: 140px;
+    height: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(16px, 1.2vw, 1.2vw);
+
+    background-color: #f71717;
+    color: white;
+    border-radius: 3px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .MessageError {
+    font-size: clamp(12px, 1.1vw, 1.1rem) !important;
   }
   @media screen and (width < 1400px) {
     .GenderArea {
@@ -262,7 +272,7 @@
   .UserInfo {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     height: 300px;
     margin-left: 40px;
   }
@@ -330,19 +340,21 @@
     color: white;
   }
 
-  .ConfirmButton {
+  .ConfirmButton0,
+  .ConfirmButton1 {
     width: 140px;
     height: 40px;
     font-family: "Bebas Neue", sans-serif;
     font-size: clamp(16px, 1.2vw, 1.2vw);
-    margin-top: 15px;
+
     background-color: #f71717;
     color: white;
     border-radius: 3px;
     transition: 0.2s ease;
     cursor: pointer;
   }
-  .ConfirmButton:hover {
+  .ConfirmButton0,
+  .ConfirmButton1:hover {
     transform: scale(1.09);
   }
   .PasswordForgout {
@@ -372,12 +384,12 @@
   }
   .GenderArea {
     display: flex;
-    height: 180px !important;
+    height: 170px !important;
     width: 35vw !important;
     min-width: 200px;
     padding: 0px 10px;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 
     justify-content: space-between;
 
@@ -387,7 +399,8 @@
   .GenderArea button {
     display: flex;
     width: 20vw;
-    height: 50px;
+    height: 30%;
+    max-height: 60px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     cursor: pointer;
@@ -412,6 +425,7 @@
   }
   .AgeArea {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -444,7 +458,8 @@
   }
   .UserNavigation {
     display: flex;
-    width: 240px;
+    width: 300px;
+    margin-top: 10px;
     flex-direction: row;
     justify-content: space-between;
   }

@@ -1,0 +1,19 @@
+.CloseButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(25px, 2vw, 40px);
+  height: clamp(25px, 2vw, 40px);
+  z-index: 1002;
+  border-radius: 50px;
+  background-color: #00ffff00;
+  border: 1px solid red;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.CloseButton:hover {
+  transform: scale(1.05);
+}
+.CloseButton img {
+  width: clamp(25px, 2.2vw, 50px);
+}

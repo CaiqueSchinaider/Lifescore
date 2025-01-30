@@ -1,0 +1,367 @@
+@media screen and (width >= 1610px) {
+  .CreateUserPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
+  }
+  .PageTitle {
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(15px, 3.7vw, 5rem);
+    cursor: default;
+  }
+  .ContainerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 380px;
+    width: clamp(300px, 55vw, 1100px);
+  }
+  .NicknameInput {
+    width: clamp(200px, 50vw, 900px);
+    height: clamp(30px, 4vw, 80px);
+    font-size: clamp(15px, 4vw, 10rem);
+    background-color: #00ffff00;
+    border: 2px solid white;
+    color: gold;
+    text-align: center;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 700;
+  }
+  .NicknameInput:focus {
+    border: 2px solid white;
+  }
+  .CreateButton {
+    width: clamp(150px, 15vw, 15vw);
+    height: clamp(40px, 4vw, 80px);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(16px, 3vw, 2.3rem);
+    margin-top: 15px;
+    background-color: #f71717;
+    color: white;
+    border-radius: 4px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .CreateButton:hover {
+    transform: scale(1.07);
+  }
+  .PageTitle1 {
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 2rem;
+    margin: 5px 0px;
+    cursor: default;
+  }
+  .UserClass {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 2px solid white;
+    padding: 15px;
+  }
+  .ClassButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 80px;
+    background-color: #a6060600;
+    border-radius: 15px;
+    border: 1px solid white;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .ClassButton:hover {
+    transform: scale(1.05);
+  }
+  .ClassButton p {
+    color: white;
+    cursor: pointer;
+
+    margin: 0px;
+    min-width: 200px;
+  }
+  .ClassButton img {
+    width: 40px;
+    filter: invert(100);
+  }
+  .ContainerArchetype {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff00;
+    position: absolute;
+  }
+  .CloseButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    z-index: 1002;
+    border-radius: 50px;
+    background-color: #00ffff00;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .CloseButton:hover {
+    transform: scale(1.05);
+  }
+  .CloseButton img {
+    width: 40px;
+  }
+}
+@media screen and (width < 1610px) and (width >= 1055px) {
+  .CreateUserPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
+  }
+  .PageTitle {
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(15px, 3.7vw, 5rem);
+    cursor: default;
+  }
+  .ContainerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 380px;
+    width: clamp(300px, 55vw, 1100px);
+  }
+  .NicknameInput {
+    width: clamp(200px, 50vw, 900px);
+    height: clamp(30px, 4vw, 80px);
+    font-size: clamp(15px, 4vw, 10rem);
+    background-color: #00ffff00;
+    border: 2px solid white;
+    color: gold;
+    text-align: center;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 700;
+  }
+  .NicknameInput:focus {
+    border: 2px solid white;
+  }
+  .CreateButton {
+    width: clamp(150px, 15vw, 15vw);
+    height: clamp(40px, 4vw, 80px);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(16px, 3vw, 2.3rem);
+    margin-top: 15px;
+    background-color: #f71717;
+    color: white;
+    border-radius: 4px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .CreateButton:hover {
+    transform: scale(1.07);
+  }
+  .PageTitle1 {
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 2rem;
+    margin: 5px 0px;
+    cursor: default;
+  }
+  .UserClass {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px !important;
+    gap: 15px;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 15px;
+  }
+  .ClassButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 80px;
+    background-color: #a6060600;
+    border-radius: 15px;
+    border: 1px solid white;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .ClassButton:hover {
+    transform: scale(1.05);
+  }
+  .ClassButton p {
+    color: white;
+    cursor: pointer;
+
+    margin: 0px;
+    min-width: 200px;
+  }
+  .ClassButton img {
+    width: 40px;
+    filter: invert(100);
+  }
+  .ContainerArchetype {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff00;
+    position: absolute;
+  }
+  .CloseButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    z-index: 1002;
+    border-radius: 50px;
+    background-color: #00ffff00;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .CloseButton:hover {
+    transform: scale(1.05);
+  }
+  .CloseButton img {
+    width: 40px;
+  }
+}
+@media screen and (width < 1055px) {
+  .CreateUserPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+    background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
+  }
+  .PageTitle {
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+    font-size: clamp(21px, 3.7vw, 5rem);
+    cursor: default;
+  }
+  .ContainerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 220px;
+    width: clamp(300px, 55vw, 1100px);
+  }
+  .NicknameInput {
+    width: clamp(270px, 50vw, 900px);
+    height: clamp(30px, 4vw, 80px);
+    font-size: clamp(20px, 4vw, 10rem);
+    background-color: #00ffff00;
+    border: 2px solid white;
+    color: gold;
+    text-align: center;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 700;
+  }
+  .NicknameInput:focus {
+    border: 2px solid white;
+  }
+  .CreateButton {
+    width: clamp(150px, 15vw, 15vw);
+    height: clamp(40px, 4vw, 80px);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(16px, 3vw, 2.3rem);
+    margin-top: 15px;
+    background-color: #f71717;
+    color: white;
+    border-radius: 4px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .CreateButton:hover {
+    transform: scale(1.07);
+  }
+  .PageTitle1 {
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 2rem;
+    margin: 5px 0px;
+    cursor: default;
+  }
+  .UserClass {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px !important;
+    height: 350px;
+    justify-content: center;
+    gap: 15px;
+    border: 2px solid white;
+    padding: 15px;
+    overflow-y: scroll;
+  }
+  .ClassButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    height: 80px;
+    background-color: #a6060600;
+    border-radius: 15px;
+    border: 1px solid white;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  .ClassButton:hover {
+    transform: scale(1.05);
+  }
+  .ClassButton p {
+    color: white;
+    cursor: pointer;
+
+    margin: 0px;
+    min-width: 200px;
+  }
+  .ClassButton img {
+    width: 40px;
+    filter: invert(100);
+  }
+  .ContainerArchetype {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff00;
+    position: absolute;
+  }
+  .CloseButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    z-index: 1002;
+    border-radius: 50px;
+    background-color: #00ffff00;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .CloseButton:hover {
+    transform: scale(1.05);
+  }
+  .CloseButton img {
+    width: 40px;
+  }
+}
