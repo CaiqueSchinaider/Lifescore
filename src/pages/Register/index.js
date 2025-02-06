@@ -299,14 +299,16 @@ function Register() {
       signal[0].create
     ) {
       navigate("/createuser");
-      setDataUser({
-        class: "",
-        email: emailInput,
-        nickname: "",
-        password: passwordInput,
-        gender: genderName,
-        age: ageInput,
-      });
+      setDataUser([
+        {
+          class: "",
+          email: emailInput,
+          nickname: "",
+          password: passwordInput,
+          gender: genderName,
+          age: ageInput,
+        },
+      ]);
     }
   }, [signal]);
 

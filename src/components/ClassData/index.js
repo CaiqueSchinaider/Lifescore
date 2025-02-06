@@ -1,6 +1,17 @@
+import { useContext } from "react";
 import styles from "./ClassData.module.css";
+import { DataUserContext } from "../../contexts/userData";
 
 function ClassData({ children, name, description, attributes, mastery }) {
+  const [dataUser, setDataUser] = useContext(DataUserContext);
+  function Select(nameClass) {
+    setDataUser((prevDataUser) => {
+      const updateDataUser = { ...prevDataUser };
+      updateDataUser[0] = { ...updateDataUser[0], class: nameClass };
+      return updateDataUser;
+    });
+    console.log(dataUser);
+  }
   return (
     <main className={styles.ClassBackground}>
       <section className={styles.ClassDataClass}>
@@ -17,7 +28,18 @@ function ClassData({ children, name, description, attributes, mastery }) {
           </ul>
         </p>
         <h2> Maestria da classe </h2>
-        <p className={styles.ClassMaestria}> {mastery} </p>
+        <div className={styles.MasteryBox}>
+          <p className={styles.ClassMaestria}> {mastery} </p>
+          <button
+            className={styles.Select}
+            onClick={() => {
+              Select(name);
+            }}
+          >
+            {" "}
+            Selecionar
+          </button>
+        </div>
       </section>
     </main>
   );

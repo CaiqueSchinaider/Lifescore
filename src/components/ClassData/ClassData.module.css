@@ -10,28 +10,32 @@
 }
 .ClassBackground h2 {
   color: #8f8f8f;
-  font-size: clamp(19px, 2vw, 1.2rem);
+  font-size: clamp(19px, 2vw, 1.5rem);
+  cursor: default;
+  margin-bottom: 2px;
 }
 .ClassDataClass {
   background-image: linear-gradient(to bottom, #07004d, #271f7d, #07004d);
   color: black;
   padding: 20px;
   width: 50vw;
-  height: 70vh;
+
+  min-width: 300px;
   z-index: 1001;
   border-radius: 15px;
   border: 2px solid white;
 }
 .ClassSelected {
   color: gold !important;
+  cursor: default;
 }
 .ClassDescription {
-  font-size: clamp(13px, 1.4vw, 3rem);
+  font-size: clamp(25px, 1.3vw, 1.8rem);
   color: #ffffff;
 }
 .ClassSelected {
   font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(18px, 2vw, 4rem);
+  font-size: clamp(18px, 2vw, 3rem);
   margin: 4px 0px 6px;
   color: #ffffff;
   border-bottom: 2px solid #ffffff;
@@ -43,8 +47,9 @@
   color: #00ffe1;
   border: 2px solid #00ffe1;
   text-shadow: 0px 0px 10px #00ffe1ae;
-  width: clamp(200px, 2vw, 600px);
+  width: clamp(200px, 2vw, 800px);
   text-align: center;
+  font-size: clamp(20px, 2vw, 2rem);
 }
 .ButtonClose {
   display: flex;
@@ -53,4 +58,51 @@
   margin-left: 97%;
   width: clamp(23px, 1vw, 40px);
   height: clamp(23px, 1vw, 40px);
+}
+.Select {
+  width: 120px;
+  height: 50px;
+  border: 2px solid white;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #06004d00;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.Select:hover {
+  transform: scale(1.06);
+}
+.MasteryBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+ul {
+  font-size: clamp(20px, 2vw, 2rem);
+}
+@media screen and (width <= 1020px) {
+  .ClassBackground {
+    background-image: linear-gradient(
+      to right,
+      #000000,
+      #000000ef,
+      #000000
+    ) !important;
+  }
+  .ClassDescription {
+    font-size: clamp(15px, 1.4vw, 2rem) !important;
+  }
+  .ClassDataClass {
+    height: clamp(50vh, 50vw, 60vh) !important;
+  }
+}
+@media screen and (width <= 677px) {
+  .MasteryBox {
+    flex-direction: column;
+  }
+}
+.ClassDataClass {
+  height: clamp(50vh, 45vw, 65vh);
 }
